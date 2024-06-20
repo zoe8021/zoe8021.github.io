@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharing and exchange</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+    <header>
+        <h1>  <a href="index.htm" title="Resource sharing and exchange">RResource sharing and exchange</a></h1>
+        <nav>
+            <button class="nav-button"><img src="image/img_menu.svg" alt=""></button>
+            <ul class="nav-menu hide">
+                <li><a href="#" title="About Us">關於我們</a></li>
+                <li><a href="#" title="Resources">資源列表</a>
+                    <!--註解 
+                   <ul class="suboptions">
+                    <li><a href="#">玩具</a></li>
+                    <li><a href="#">衣物</a></li>
+                    <li><a href="#">收藏品</a></li>
+                    <li><a href="#">家具</a></li>
+                  </ul>--></li>
+                <li><a href="#" title="Rules">遊戲規則</a></li>
+                <li><a href="#" title="Members">會員專區</a>
+                     <!--註解 <ul class="suboptions">
+                    <li><a href="#">登入會員
+                    </a></li>
+                    <li><a href="#">資料修改</a></li>
+                    <li><a href="#">點數查詢</a></li>
+                   
+                  </ul>-->
+                </li>
+                <li><a href="#" title="contact">聯絡我們</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>留下你多的 <BR>帶走你少的</h1>
+        <p>打造永續環境生活</p>
+    </main>
+    <section>
+        <div class="card">
+            <picture class="card__image">
+                <source media="(max-width: 727px)" srcset="image/img_card01p.jpg">
+                <source media="(min-width: 728px)" srcset="image/img_card01.jpg">
+                <img src="image/img_card01.jpg" alt="How to choose the right plants">
+            </picture>
+            <div class="card__info">
+                <h3>How to choose the right plants</h3>
+                <p>Your indoor greenery will find you when you are least prepared.</p>
+            </div>
+        </div>
+        <div class="card">
+            <picture class="card__image">
+                <source media="(max-width: 727px)" srcset="image/img_card02p.jpg">
+                <source media="(min-width: 728px)" srcset="image/img_card02.jpg">
+                <img src="image/img_card02.jpg" alt="How to choose the right plants">
+            </picture>
+            <div class="card__info">
+                <h3>When is the best timing</h3>
+                <p>Succulents love light and need about six hours of sun per day.</p>
+            </div>
+        </div>
+        <div class="card">
+            <picture class="card__image">
+                <source media="(max-width: 727px)" srcset="image/img_card03p.jpg">
+                <source media="(min-width: 728px)" srcset="image/img_card03.jpg">
+                <img src="image/img_card03.jpg" alt="How to choose the right plants">
+            </picture>
+            <div class="card__info">
+                <h3>A perfect pot for your favorit plant</h3>
+                <p>Pleasures can be found in a humble potted cactus as in a conservatory.</p>
+            </div>
+        </div>
+        <div class="card">
+            <picture class="card__image">
+                <source media="(max-width: 727px)" srcset="image/img_card04p.jpg">
+                <source media="(min-width: 728px)" srcset="image/img_card04.jpg">
+                <img src="image/img_card04.jpg" alt="How to choose the right plants">
+            </picture>
+            <div class="card__info">
+                <h3>Place it on your healing corner</h3>
+                <p>Don't underestimate the power of that succulent in your living room.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright 2024 Resource sharing and exchange. All Rights Reserved</p>
+    </footer>
+</div>  
+
+
+
+<script>
+    let myNav = document.querySelector(".nav-menu"); //在 JS 裡定義下拉選單
+    let myButton = document.querySelector(".nav-button");// 在 JS 裡定義漢堡按鈕
+
+    myButton.addEventListener("click", function() { //在 myButton 上安裝事件監聽器，監聽有無被點選的動作
+    myNav.classList.toggle("hide"); //如果有被點選，就在 myNav 的 class 清單中，開關 hide 這個 class
+    });
+</script>
+
+
+
+
+</body>
+</html>

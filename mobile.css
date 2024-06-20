@@ -1,0 +1,150 @@
+/*Mobile Setting Start*/
+@media screen and (max-width: 727px){
+    img {
+        width: 100%;
+    }
+
+    .wrap {
+        width: 100%; 
+        margin: 0px auto;
+        padding: 10px 20px;
+        background-color: var(--white-color);
+    }
+    header {
+        width: 100%; 
+        margin: 0px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    header h1 {
+        text-indent: -999px;
+        overflow: hidden;
+        width: 180px;
+    }
+    header h1 a {
+        display: block;
+        width: 180px; height: 45px;
+        background-image: url(image/img_logo.svg);
+    }
+    button {
+        border: 0;
+        background-color: transparent;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+    }
+
+    header ul {
+        margin: 0; padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 10px;
+    }
+    .hide {
+        display: none;
+    }
+    header ul a {
+        color: var(--main-color);
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+        line-height: 46px;
+        display: block;
+        width: 100%; 
+        height: 46px;
+        border-radius: 23px;
+        background-color: var(--light-color);
+    }
+    header ul a:hover {
+        color: var(--white-color);
+        background-color: var(--secondary-color);
+    }
+    main {
+        width: 100%; 
+        height: 400px;
+        margin: 0px auto;
+        border-radius: 15px;
+        padding-top: 90px;
+        padding-left: 40px;
+        background-image: url(image/img_main_potrait.png);
+        background-position-x: -140px;
+        display: flow-root;
+    }
+    main h1 {
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 57px;
+        width: 100%;
+        text-shadow: 0 0 4px rgba(0, 0, 0, 0.20);
+    }
+    main p {
+        color: var(--gray-color);
+        font-size: 18px;
+        font-family: var(--secondary-font);
+        line-height: 27px;
+        text-indent: 0px;
+        margin-top: 12px;
+        padding-left: 6px;
+    }
+    section {
+        width: 100%; 
+        margin: 10px auto;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .suboptions {
+        display: none; /* 初始隱藏子選項 */
+        margin-left: 20px; /* 可根據需要調整縮排 */
+      }
+    
+      li:hover .suboptions {
+        display: block; /* 滑鼠靠近時顯示子選項 */
+      }
+    
+
+
+    .card {
+        width: 100%; 
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.20);;
+    
+    }
+    .card__image {
+        width: 100%;
+        object-fit: contain;
+    }
+    div.card__info {
+        padding: 13px;
+    }
+    div.card__info h3 {
+        color: var(--main-color);
+        font-size: 22px;
+        font-weight: 400;
+        font-family: var(--main-font);
+        margin-bottom: 13px;
+    }
+    div.card__info p {
+        color: var(--third-color);
+        font-size: 15px;
+        font-family: var(--secondary-font);
+        font-weight: 400;
+        line-height: 20px;
+    }
+    footer {
+        color: var(--secondary-color);
+        text-align: center;
+        font-size: 16px;
+        font-family: var(--main-font);
+        line-height: 150%;
+    }
+    
+    }/*Desktop Setting End*/

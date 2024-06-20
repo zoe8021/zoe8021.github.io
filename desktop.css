@@ -1,0 +1,133 @@
+/*Desktop Setting Start*/
+@media screen and (min-width: 728px){
+    
+
+.wrap {
+    width: 940px; 
+    margin: 20px auto;
+    padding-top: 20px;
+    background-color: var(--white-color);
+}
+header {
+    width: 900px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+header h1 {
+    text-indent: -999px;
+    overflow: hidden;
+    width: 180px;
+}
+header h1 a {
+    display: block;
+    width: 180px; height: 45px;
+    background-image: url(image/img_logo.svg);
+}
+button {
+    display: none;
+}
+header ul {
+    margin: 0; padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+}
+header ul a {
+    color: var(--main-color);
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    display: block;
+    width: 133px; height: 30px;
+    border-radius: 15px;
+    background-color: var(--light-color);
+}
+header ul a:hover {
+    color: var(--white-color);
+    background-color: var(--secondary-color);
+}
+main {
+    width: 900px;
+    height: 350px;
+    margin: 0px auto;
+    border-radius: 15px;
+    padding-top: 90px;
+    padding-left: 40px;
+    background-image: url(image/img_main_landscape.png);
+    display: flow-root;
+}
+main h1 {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 80px;
+    width: 420px;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.20);
+}
+main p {
+    color: var(--gray-color);
+    font-size: 20px;
+    font-family: var(--secondary-font);
+    line-height: 60px;
+    text-indent: 10px;
+}
+section {
+    width: 900px;
+    margin: 10px auto;
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+
+  /* .suboptions {
+    display: none; c 初始隱藏子選項 
+    margin-left: 20px;  
+
+  } */ /* 可根據需要調整縮排 */
+
+ /*  li:hover .suboptions {
+    display: block; 
+    background-color: ;
+  }
+  *//* 滑鼠靠近時顯示子選項 */
+
+.card {
+    width: 210px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.20);;
+
+}
+.card__image {
+    width: 100%;
+    object-fit: contain;
+}
+div.card__info {
+    padding: 13px;
+}
+div.card__info h3 {
+    color: var(--main-color);
+    font-size: 22px;
+    font-weight: 400;
+    font-family: var(--main-font);
+    margin-bottom: 13px;
+}
+div.card__info p {
+    color: var(--third-color);
+    font-size: 15px;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    line-height: 20px;
+}
+footer {
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 16px;
+    font-family: var(--main-font);
+    line-height: 60px;
+}
+
+}/*Desktop Setting End*/

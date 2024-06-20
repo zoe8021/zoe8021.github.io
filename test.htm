@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>資源列表</title>
+<style>
+  .suboptions {
+    display: none; /* 初始隱藏子選項 */
+    margin-left: 20px; /* 可根據需要調整縮排 */
+    list-style-type: none; /* 移除子選項的點擊符號 */
+    padding: 0; /* 清除內部填充 */
+  }
+
+  li:hover .suboptions,
+  .suboptions.open {
+    display: flex; /* 使用 flexbox 使子選項水平排列 */
+  }
+
+  .suboptions li {
+    cursor: pointer; /* 讓子選項可以點擊 */
+    margin-right: 10px; /* 可調整子選項之間的間距 */
+  }
+</style>
+</head>
+<body>
+<h2>資源列表</h2>
+
+<ul>
+  <li>資源 1</li>
+  <li>資源 2</li>
+  <li>
+    資源 3
+    <ul class="suboptions">
+      <li>玩具</li>
+      <li>衣物</li>
+      <li>收藏品</li>
+    </ul>
+  </li>
+</ul>
+
+<script>
+  // 使用 JavaScript 監聽點擊事件，切換子選項的顯示與隱藏
+  document.querySelectorAll('li').forEach(function(item) {
+    item.addEventListener('click', function() {
+      var suboptions = this.querySelector('.suboptions');
+      if (suboptions) {
+        suboptions.classList.toggle('open'); // 切換 .open 類來控制顯示與隱藏
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
+
