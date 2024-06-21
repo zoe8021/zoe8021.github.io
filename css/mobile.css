@@ -26,7 +26,7 @@
     header h1 a {
         display: block;
         width: 180px; height: 45px;
-        background-image: url(image/img_logo.svg);
+        background-image: url(/image/img_logo.svg);
     }
     button {
         border: 0;
@@ -71,7 +71,7 @@
         border-radius: 15px;
         padding-top: 90px;
         padding-left: 40px;
-        background-image: url(image/img_main_potrait.png);
+        background-image: url(/image/img_main_potrait.png);
         background-position-x: -140px;
         display: flow-root;
     }
